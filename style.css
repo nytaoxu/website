@@ -55,7 +55,8 @@
   bottom: initial !important;
 }
 .carousel-caption h5 {
-  color: #ccc;
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 48px;
 }
 
@@ -211,4 +212,125 @@
 .img-box ul,
 .img-gox ul li {
   transition: 0.7s;
+}
+
+/* promo */
+#promo {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7) /* url(img/promo.jpg) */
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-family: sans-serif;
+  font-size: 38px;
+}
+
+/* Price Plans */
+#price {
+  text-align: center;
+  padding: 40px 0;
+  background: #efefef;
+}
+#price h1::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 3px;
+  background-color: #0075c0;
+  margin: 10px auto;
+}
+.single-price {
+  margin: 10px auto;
+  background-color: #ddd;
+  /* display: inline; */
+  transition: 0.5s;
+}
+.single-price:hover {
+  box-shadow: 0 2px 20px #333;
+}
+.price-head {
+  background-color: #0075c0;
+  padding: 10px 5px;
+}
+.price-head h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.price-head p {
+  color: #ccc;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#price span {
+  font-size: 15px;
+}
+.price-content {
+  padding: 0 15px;
+}
+.price-content ul li {
+  border-bottom: 1px solid #efefef;
+  list-style-type: none;
+  padding: 15px 10px;
+}
+.price-content ul li:last-child {
+  border: none;
+}
+.fa-check-circle {
+  color: #070;
+  /* font-size: 20px; */
+  margin-right: 10px;
+}
+.fa-times-circle {
+  color: #700;
+  margin-right: 10px;
+}
+.price-button {
+  padding: 15px 15px 30px;
+  text-align: center;
+  /* border: 1px solid brown; */
+}
+.buy-btn {
+  background-color: #2196f3;
+  border-radius: 3px;
+  color: #fff;
+  padding: 20px 50px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.buy-btn:hover {
+  background-color: #3f51b5;
+  border: 1px solid #fff;
+}
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 30px 0;
+}
+#testimonials h1 {
+  color: #ccc;
+}
+#testimonials h1::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 10px auto;
 }
